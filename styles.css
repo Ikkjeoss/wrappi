@@ -1,6 +1,5 @@
-/* Theme: black, white */
 :root{
-    --blue:#000000;
+    --blue:#3D83DB;
   --dark:#0b0b0b;
   --white:#ffffff;
   --muted:#6b7280;
@@ -15,6 +14,10 @@ body{
   background:var(--white);
     line-height:1.5;
   -webkit-font-smoothing:antialiased;
+  background-image: url(bilder/backrund.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
  
 .container{max-width:var(--container);margin:0 auto;padding:1rem clamp(1rem,2.5vw,1.5rem)}
@@ -70,7 +73,15 @@ nav a:hover{color:var(--dark)}
 }
 
 
-.hero{background:#f8fafc;color:var(--dark);padding:3.5rem 0;border-bottom:1px solid #e2e8f0}
+.hero{
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 4rem 0;
+  border-bottom: 2px solid var(--milky-border); /* Added Border */
+  border-top: 1px solid var(--milky-border);
+  margin-top: 30px;
+}
 .hero .lead{opacity:0.8;max-width:65ch}
 .hero h2{margin:0 0 0.5rem;font-size:clamp(1.6rem,3.2vw,2.3rem)}
 .btn{display:inline-block;padding:0.6rem 1rem;border-radius:6px;border:1px solid #111;background:transparent;color:var(--dark);text-decoration:none;font-weight:600;transition:transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease}
@@ -80,25 +91,46 @@ nav a:hover{color:var(--dark)}
 .btn:not(.prev):not(.next):focus-visible{outline:2px solid #111;outline-offset:2px}
 .btn.primary:hover{background:#111827;border-color:#111827}
 
-.section{padding:3rem 0}
+.section{padding:3rem}
 .section.alt{background:#f8fafc}
 .section h3{margin-top:0}
 
+#info{
+ background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 4rem 0;
+  border-bottom: 2px solid var(--milky-border); /* Added Border */
+  border-top: 1px solid var(--milky-border);
+  margin-top: 30px;
+    border-radius: 40px;
+}
 #info .container{text-align:center}
 #info h2{margin:0 0 0.75rem;font-size:clamp(2rem,4.2vw,3rem); color: #E70103;}
 #info p{margin:0 auto 1rem;max-width:600px;font-size:1.2rem}
 .info-list{padding-left:1rem}
+
+#services {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 4rem 0;
+  border-bottom: 2px solid var(--milky-border); /* Added Border */
+  border-top: 1px solid var(--milky-border);
+  margin-top: 30px;
+}
+
 
 
 
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
 .card{background:var(--white);border-radius:8px;padding:1.25rem;border:1px solid #e6eefc;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
 .card h4{margin:0 0 0.25rem}
-.service{font-size:1.5rem;color:var(--blue);margin:0.25rem 0}
+.service{font-size:1.5rem;color:var(--blue);margin:0.25rem 0; color: var(--blue);}
 .price{font-size:1.2rem;color:#0d6efd;font-weight:700;margin-top:0.75rem}
 .muted{color:var(--muted)}
 
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;margin-top:1rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;margin-top:1rem; }
 .contact-card{background:#fff;padding:1rem;border-radius:8px;border:1px solid #eef2ff}
 .contact-form{display:flex;flex-direction:column;gap:0.5rem}
 .contact-form input,.contact-form textarea{padding:0.6rem;border-radius:6px;border:1px solid #d1d5db}
@@ -235,6 +267,5 @@ nav a:hover{color:var(--dark)}
     .slider-container .btn{padding:8px 12px;font-size:16px}
     .dots-container{bottom:10px;gap:8px}
 }
-
 
   
