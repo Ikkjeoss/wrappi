@@ -17,11 +17,10 @@ body{
     line-height:1.6;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(bilder/backrund.png);
+  background-image: url(bilder/backrund.png) !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,9 +31,11 @@ body{
     color-scheme: dark !important;
     background: #000 !important;
     color: var(--white) !important;
+    background-image: url(bilder/backrund.png) !important;
   }
   body, div, section, main, header, footer {
     background-color: #000 !important;
+    background-image: url(bilder/backrund.png) !important;
     color: var(--white) !important;
   }
 }
@@ -49,11 +50,11 @@ body{
 .site-header{background:#0b0b0b !important;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.08) !important;min-height:92px;box-shadow: 0 1px 3px rgba(0,0,0,0.1)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0.5rem 0;gap:1.5rem}
 .site-header a{
-    border: 1px solid #d1d5db;
+    border: 1px solid #333 !important;
     border-radius: 6px;
     padding: 0.65rem 1.25rem;
-    background-color: #f3f4f6;
-    color: var(--dark);
+    background-color: #1a1a1a !important;
+    color: var(--white) !important;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -64,10 +65,11 @@ body{
 }
 
 .site-header a:hover{
-    background-color: #e5e7eb;
-    border-color: #9ca3af;
+    background-color: var(--blue) !important;
+    border-color: var(--blue) !important;
+    color: var(--white) !important;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(61, 131, 219, 0.3);
 }
 
 .site-header a:active{
@@ -82,8 +84,8 @@ body{
 
 .brand{color:var(--blue);margin:0;font-size:1.75rem;font-weight:800;display:flex;align-items:center;gap:0.75rem}
 nav{display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:flex-end}
-nav a{text-decoration:none;margin-left:0;font-weight:700;font-size:1rem;color:var(--white) !important}
-nav a:hover{color:var(--blue) !important}
+nav a{text-decoration:none;margin-left:0;font-weight:700;font-size:1rem;color:var(--white) !important;background-color:#1a1a1a !important;border:1px solid #333 !important;border-radius:6px;padding:0.65rem 1.25rem;display:inline-block;transition:all 0.2s ease}
+nav a:hover{color:var(--white) !important;background-color:var(--blue) !important;border-color:var(--blue) !important}
 .logo1,img {max-width:100%;height:auto}
 .logo1 {
     width: clamp(270px, 26vw, 400px);
